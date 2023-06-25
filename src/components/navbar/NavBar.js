@@ -35,7 +35,7 @@ const NavBar = () => {
           </Link>
           <ul className="navbar-nav custom-items">
             <li className="nav-item custom_item_nav custom_active  d-flex justify-content-center">
-              <Link className="nav-link " to="/">
+              <Link className="nav-link " to="/home">
                 <i className="fa-solid fa-house"></i>
               </Link>
             </li>
@@ -47,7 +47,7 @@ const NavBar = () => {
             <li className="nav-item custom_item_nav d-flex justify-content-center">
               <Link
                 className="nav-link"
-                to="/"
+                to="/setting"
                 onClick={() => setSettingPopup(true)}
               >
                 <i className="fa-sharp fa-solid fa-gear"></i>

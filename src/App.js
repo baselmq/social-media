@@ -5,6 +5,9 @@ import Profile from "./pages/Profile";
 import { useTranslation } from "react-i18next";
 import React, { useEffect } from "react";
 import cookies from "js-cookie";
+import LoginPage from "./pages/LoginPage";
+import Register from "./pages/Register";
+import AddInformation from "./components/sign_up/AddInformation";
 const languages = [
   {
     code: "en",
@@ -31,7 +34,10 @@ function App() {
   // .*** --------------------return--------------------- ***
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/information" element={<AddInformation />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/profile" element={<Profile />} />
       {/* <Route path="/profile" element={<Profile />} /> */}
     </Routes>
