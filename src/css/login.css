@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sign-up-google img,
+.sign-up-github img {
+  width: 25px;
+  height: 25px;
+}
+.register__form h4 {
+  text-align: center;
+  color: #a303a0;
+}
+.image__register {
+  width: 550px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+/* @media (min-width: 1400px) {
+    .image__register {
+      margin: 0 100px;
+    }
+  } */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .image__register {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (max-width: 768px) {
+  .image__register {
+    display: none;
+  }
+  .register__page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* @media (max-width: 480px) {
+  } */
+.btn-custom-register {
+  color: var(--btn-color);
+  background-color: #fff;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid var(--btn-color);
+  transition: 0.3s;
+}
+
+.btn-custom-register:hover {
+  transition: 0.4s;
+  background-color: #a303a0 !important;
+}
+
+.invalid input {
+  border-color: #d93025;
+}
+.field .error {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  color: #d93025;
+  font-size: 13px;
+  display: none;
+}
+.invalid .error {
+  display: flex;
+}
+
+.create-password .error {
+  align-items: flex-start;
+}
+
+.text__sign {
+  font-size: 15px;
+}
+.text__sign a {
+  color: #a303a0;
+}
+.text__sign a:hover {
+  text-decoration: underline !important;
+}
+
+.navbar-sign {
+  color: #a303a0;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.navbar-sign:hover {
+  color: #a303a0;
+}
+
+.btn-custom-register:hover {
+  border-color: #a303a0;
+}
+.forget__pass:hover {
+  cursor: pointer;
+}

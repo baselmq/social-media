@@ -6,6 +6,8 @@ import { BrowserRouter } from "react-router-dom";
 import LoadingPage from "./pages/Loading";
 import Signup from "./pages/Signup";
 import Signin from "./pages/Signin";
+import LoginPage from "./pages/LoginPage";
+import Register from "./pages/Register";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -22,8 +24,9 @@ root.render(
   <Suspense fallback={loadingMarkup}>
     <React.StrictMode>
       <BrowserRouter>
+        {/* <Register /> */}
         {/* <App /> */}
-        <Signup/>
+        {/* <Signup /> */}
         {/* <Signin /> */}
       </BrowserRouter>
     </React.StrictMode>
