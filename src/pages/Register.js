@@ -53,7 +53,10 @@ const Register = () => {
               </div>
               {/* <!-- ------------- *** Confirm Password *** ------------- --> */}
               <div className={"mb-3 field confirm-password"}>
-                <label htmlFor={"inputConfirmPassword"} className={"form-label"}>
+                <label
+                  htmlFor={"inputConfirmPassword"}
+                  className={"form-label"}
+                >
                   Confirm Password
                 </label>
                 <input
