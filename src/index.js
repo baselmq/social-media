@@ -22,8 +22,8 @@ root.render(
   <Suspense fallback={loadingMarkup}>
     <React.StrictMode>
       <BrowserRouter>
-        <App />
-        {/* <Signup/> */}
+        {/* <App /> */}
+        <Signup/>
         {/* <Signin /> */}
       </BrowserRouter>
     </React.StrictMode>
