@@ -1,0 +1,26 @@
+.container_add_post {
+  background-color: var(--card-color);
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.header_add_post {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+.btn-add_post {
+  background-color: var(--border-color);
+  border-radius: 30px;
+  width: 100%;
+  transition-duration: 0.5s;
+}
+.btn-add_post:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.add_photo:hover {
+  cursor: pointer;
+}
+.feeling:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "~@flaticon/flaticon-uicons/css/all/all";
+@import "../components/cards/cardAbout.css";
+@import "../components/navbar/navBar.css";
+@import "../components/cover/cover_profile.css";
+@import "../components/posts/card_post.css";
+@import "../components/posts/add_post.css";
+@import "./profile.css";
+@import "../components/popup/popup_friends.css";
+@import "../components/popup/popup.css";
+@import "../components/posts/components/create_post.css";
+@import "../components/navbar/searchBar.css";
+@import "../components/language/custom_language.css";
+@import "./loading.css";
+:root {
+  /* Light mode colors */
+  --background-color: #f7f7f8;
+  --card-color: #ffffff;
+  --text-color: #252525;
+  --btn-color: #a303a0;
+  --btn-text-color: #ffffff;
+  --focus-dropDown: #a303a024;
+  --hover-color: #eeeeee;
+  --border-color: #e9e9e9;
+
+  /* --light-accent-color: #277a8f;
+  --secondary-color: #868e96;
+  --button-color: #f6f8fa; */
+
+  /* Dark mode colors */
+  --background-color-dark: #18191a;
+  --card-color-dark: #242526;
+  --text-color-dark: #e7e9ed;
+  --btn-text-color-dark: #ffffff;
+  --btn-color-dark: #a303a0;
+  --focus-dropDown-dark: #a303a024;
+  --hover-color-dark: #272727;
+  --border-color-dark: #383838;
+  /* --accent-color-dark: #395271;
+  --light-accent-color-dark: #277a8f;
+  --secondary-color-dark: #868e96;
+  --hr-color-dark: #33383f;
+  --button-color-dark: #21262d; */
+}
+
+/* Dark mode */
+body.dark-mode {
+  --background-color: var(--background-color-dark);
+  --card-color: var(--card-color-dark);
+  --text-color: var(--text-color-dark);
+  --btn-color: var(--btn-color-dark);
+  --focus-dropDown: var(--focus-dropDown-dark);
+  --hover-color: var(--hover-color-dark);
+  --border-color: var(--border-color-dark);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+body {
+  background-color: var(--background-color);
+}
+
+.bodyAllPages {
+  background-color: var(--background-color);
+  padding: 0 100px;
+}
+
+.btnWithIcon {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 20px 0 12px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+}
+
+/* Medium Screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .bodyAllPages {
+    padding: 0 40px;
+  }
+}
+
+/* Small Screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .bodyAllPages {
+    padding: 0 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .bodyAllPages {
+    padding: 0 20px;
+  }
+}
